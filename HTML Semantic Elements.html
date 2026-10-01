@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/Project.HTML -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic Elements</title>
+<style>
+        @font-face {
+            font-family: 'NotoSans_online_security'; 
+            src: url(chrome-extension://jcpgbnbdnakoblgfkbgggankeidkfcdl/assets/fonts/noto-sans-regular.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_medium_online_security'; 
+            src: url(chrome-extension://jcpgbnbdnakoblgfkbgggankeidkfcdl/assets/fonts/noto-sans-medium.ttf);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_bold_online_security'; 
+            src: url(chrome-extension://jcpgbnbdnakoblgfkbgggankeidkfcdl/assets/fonts/noto-sans-bold.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_semibold_online_security'; 
+            src: url(chrome-extension://jcpgbnbdnakoblgfkbgggankeidkfcdl/assets/fonts/noto-sans-semibold.ttf);
+        }
+</style></head>
+<body>
+
+    <!-- Some Big Heading -->
+     <h1>Welcome to My First hand on Project</h1>
+     <h2>Unseen Clues: Navigating Contaminated Evidence</h2>
+
+     <!-- Some Paragraph of Text -->
+      <p>In modern criminal investigations, data and physical traces serve as the silent witnesses to every scene. However, a major hurdle many investigators face is a lack of efficiency when analyzing data that has been heavily contaminated, or worse, working through cases where traditional evidential samples seem entirely absent</p>
+      
+      <p></p><p>True forensic precision lies in seeing beyond the surface noise. When a lab sample is degraded, mixed, or compromised by environmental factors, standard analytical workflows often fall short. Bridging this gap requires advanced data reconciliation, methodical evidence tracking, and systematic analytical rigor to extract truth from chaos.</p><p></p>
+
+<!-- A nice image -->
+  <img src="./HTML Semantic Elements_files/Crime scene image.jpg" alt="Forensic laboratory and data analysis workspace" width="400">
+
+
+  <!-- A smaller heading maybe -->
+  <h2>Essential Forensic Resources &amp; Tools</h2>
+
+  <!-- Some more paragraphs of text -->
+  <p>To overcome evidence contamination, investigators and forensic analysts rely on strict standards, specialized databases, and ongoing professional education:</p>
+
+  <!-- Some links to websites -->
+  <p>
+    <a href="https://www.theiai.org/" target="_blank">International Association for Identification</a> | 
+    <a href="https://www.nist.gov/" target="_blank">NIST Forensic Science Research</a> | 
+    <a href="https://www.google.com/" target="_blank">Search Literature</a>
+  </p>
+
+  <!-- Another smaller heading -->
+  <h2>My Favorite Books</h2>
+
+  <!-- A list of books I read -->
+  <ul>
+    <li><b>Atomic Habits</b> by James Clear</li>
+    <li><b>Deep Work</b> by Cal Newport</li>
+    <li><b>The Clean Coder</b> by Robert C. Martin</li>
+  </ul>
+
+  <!-- Images of some of the books I read during my leisure time -->
+  <h3>Book Gallery</h3>
+  <img src="./HTML Semantic Elements_files/book 2.jpg" alt="Atomic Habits book cover" width="150">
+  <img src="./HTML Semantic Elements_files/Book 1.jpg" alt="Deep Work book cover" width="150">
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
